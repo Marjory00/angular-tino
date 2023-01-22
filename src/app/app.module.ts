@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-
+import { NgbDateStruct, NgbDateAdapter, NgbDateNativeUTCAdapter} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,10 +20,12 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
-  providers: [],
+  providers: [
+    [{provide: NgbDateAdapter, useClass: NgbDateNativeUTCAdapter}]
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
