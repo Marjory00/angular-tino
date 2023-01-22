@@ -9,13 +9,19 @@ import { RegistrationComponent } from './registration/registration.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { NgbDateStruct, NgbDateAdapter, NgbDateNativeUTCAdapter} from '@ng-bootstrap/ng-bootstrap';
+import { EmployeeCreateComponent } from './components/employee-create/employee-create.component';
+import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
+import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    EmployeeCreateComponent,
+    EmployeeEditComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
