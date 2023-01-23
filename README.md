@@ -4,7 +4,7 @@ Full Stack Angular Bootstrap with CRUD backend functionality.
 
 ## Screenshots
 * Image 
-![App Screenshot](https://i.postimg.cc/9XgkhZpc/ap5646.png)
+![App Screenshot](https://i.postimg.cc/t4SVgRsQ/ap5646.png)
 
 * Image
 ![App Screenshot](https://i.postimg.cc/GmWTD7xq/arye.png)
