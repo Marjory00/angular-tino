@@ -14,7 +14,7 @@ employeeRoute.route('/create').post((req, res, next) => {
       res.json(data)
     }
   })
-})
+});
 
 // Get All Employees
 employeeRoute.route('/').get((req, res) => {
@@ -55,7 +55,7 @@ employeeRoute.route('/update/:id').put((req, res, next) => {
       }
     },
   )
-})
+  });
 
 // Delete employee
 employeeRoute.route('/delete/:id').delete((req, res, next) => {
@@ -70,4 +70,4 @@ employeeRoute.route('/delete/:id').delete((req, res, next) => {
   })
 })
 
-module.exports = employeeRoute
+module.exports = employeeRoute;

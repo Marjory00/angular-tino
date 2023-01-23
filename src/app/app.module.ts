@@ -9,6 +9,8 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './service/api.service';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

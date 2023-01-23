@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+import { Schema as _Schema, model } from 'mongoose';
+const Schema = _Schema;
 
 
 // Define collection and schema
@@ -20,4 +20,4 @@ let Employee = new Schema({
    collection: 'employees'
 })
 
-module.exports = mongoose.model('Employee', Employee)
+export default model('Employee', Employee)

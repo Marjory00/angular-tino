@@ -11,6 +11,9 @@ describe('EmployeeCreateComponent', () => {
       declarations: [ EmployeeCreateComponent ]
     })
     .compileComponents();
+  });
+
+  beforeEach(() => {
 
     fixture = TestBed.createComponent(EmployeeCreateComponent);
     component = fixture.componentInstance;
