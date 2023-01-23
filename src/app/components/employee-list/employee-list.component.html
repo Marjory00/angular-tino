@@ -4,9 +4,9 @@
   
     <!-- Employee list -->
     <table class="table table-bordered">
-      <thead class="table-success">
+      <thead class="table-white">
         <tr>
-           <tr class="table-active">
+           <tr class="table-active table-top">
           <th scope="col">Employee ID</th> 
           <th scope="col">Name</th>
           <th scope="col">Email</th>
@@ -14,30 +14,38 @@
           <th scope="col">Phone No</th>
           <th scope="col center">Update</th>
         </tr>
+       
      <!-- Row -->
-     <tr>
-      <th scope="row">1</th>
-      <td colspan="2" class="table-active">Employee</td>
-      <td>New</td>
-      <td>New</td>
-      <td>New</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td colspan="2" class="table-active">Employee</td>
-      <td>New</td>
-      <td>New</td>
-      <td>New</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2" class="table-active">Employee</td>
-      <td>New</td>
-      <td>New</td>
-      <td>New</td>
-    </tr>
+     
+    <tbody>
+     
+      <tr>
+          <td><a href="#" class="table-active">00</a></td>
+          <td scope="col">Employee name </td>
+          <td scope="col">mary@example.com</td>
+          <td scope="col">mary@example.com</td>
+          <td scope="col">000-000-000</td>
+          <td scope="col">Work</td>
+      </tr>
       
-      </thead>
+      <tr>
+        <td><a href="#" class="table-active">00</a></td>
+        <td scope="col">Employee name </td>
+        <td scope="col">mary@example.com</td>
+        <td scope="col">mary@example.com</td>
+        <td scope="col">000-000-000</td>
+        <td scope="col">Work</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="table-active">00</a></td>
+      <td scope="col">Employee name </td>
+      <td scope="col">mary@example.com</td>
+      <td scope="col">mary@example.com</td>
+      <td scope="col">000-000-000</td>
+      <td scope="col">Work</td>
+  </tr>
+  </tbody>
+  
       <tbody>
         <tr *ngFor="let employee of Employee; let i = index">
           <th scope="row">{{employee._id}}</th>
@@ -55,6 +63,7 @@
           </td>
         </tr>
       </tbody>
+<br>
 <br>
         <!-- No data message -->
     <p *ngIf="Employee.length <= 0" class="no-data text-center">There is no employee added yet!</p>

@@ -1,4 +1,13 @@
 # AngularTino
+Full Stack Angular Bootstrap with CRUD backend functionality.
+
+
+## Screenshots
+* Image 
+![App Screenshot](https://i.postimg.cc/t4SVgRsQ/ap5646.png)
+
+* Image
+![App Screenshot](https://i.postimg.cc/GmWTD7xq/arye.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
