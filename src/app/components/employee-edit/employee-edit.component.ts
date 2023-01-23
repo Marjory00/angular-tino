@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Employee } from ''
+
 
 @Component({
   selector: 'app-employee-edit',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-edit.component.css']
 })
 export class EmployeeEditComponent {
+updateProfile(arg0: any) {
+throw new Error('Method not implemented.');
+}
+onSubmit() {
+throw new Error('Method not implemented.');
+}
+submitted: any;
+myForm: any;
+editForm: FormGroup<any>;
 
 }
