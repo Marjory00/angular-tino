@@ -2,6 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from './../../service/api.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Employee } from 'src/app/model/employee';
 
 
 @Component({
@@ -11,6 +12,14 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 
 export class EmployeeCreateComponent implements OnInit {
+
+createEmployeeRequest: Employee = {
+  name: '',
+  email: '',
+  designation: '',
+  phoneNumber: undefined,
+}
+
 
   submitted = false;
   employeeForm: any;

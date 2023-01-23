@@ -4,4 +4,6 @@ export class Employee {
     email: string | undefined;
     designation: string | undefined;
     phoneNumber: number | undefined;
+    
+   
   }
